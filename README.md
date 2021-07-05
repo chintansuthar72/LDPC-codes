@@ -1,1 +1,1 @@
-# LDPC-codes
+# LDPC-codes Decoding algoritms for different channels
