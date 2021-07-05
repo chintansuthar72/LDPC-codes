@@ -105,7 +105,7 @@ for pError in p:
                     p_0 = prob0 /(1- VNs[i][idx + dv]) if (1- VNs[i][idx + dv])!=0 else 1
                     for v_n in range(dc):
                         if CNs[int(VNs[i][idx])][v_n]==i:
-                            CNs[int(VNs[i][idx])][v_n+dc] = p_1/(p_1+p_0)
+                            CNs[int(VNs[i][idx])][v_n+dc] = p_1/(p_1+p_0) if p_1+p_0 != 0 else 0
                             break
 
             # check if previous iteration's decoded message and present iteration's decoded message is same or not
